@@ -1,0 +1,156 @@
+﻿body {
+    margin: 1em;
+    background-color: #140C21;
+}
+
+.Wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas:
+        'home_img home_img home_img home_img'
+        '. . . . '
+        '. intro . .'
+        '.  contact  . .'
+        '.  nav_icon1  nav_icon2 .';
+        grid-gap:1.2em;
+}
+
+.intro{
+    grid-area:intro;
+    color:white;
+
+}
+
+.bar {
+    padding-bottom: 50px;
+    z-index:1;
+}
+
+.nav_bar > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 2em;
+    
+    
+}
+.nav_bar {
+    margin: 0;
+    padding: 0;
+    grid-area: nav_bar;
+    color: white;
+    display: block;
+    background-color: white;
+    height: 100px;
+    width: 100%;
+    
+}
+ul {
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+li {
+    display: inline;
+    padding: 1em;
+    float: right;
+    
+}
+.home_img
+{
+    
+    z-index:2;
+
+}
+.work_icon {
+    padding-top:1em;
+}
+.nav_icon1 {
+    grid-area:nav_icon1;
+    text-align:center;
+    background-color:white;
+    width:90%;
+}
+
+    .nav_icon1 .img {
+        padding-top:1em; 
+    }
+
+.nav_icon2 {
+    grid-area: nav_icon2;
+    text-align: center;
+    background-color: white;
+    justify-content:center;
+}
+
+.work_icon2 {
+    padding-top: 1em;
+}
+.contact {
+    grid-area: contact;
+    text-align: center;
+    z-index: 2;
+    grid-column: 2;
+    grid-row: 3;
+    padding-top:6em;
+    padding-right:2em;
+    
+}
+
+.HI {
+    color: palegreen;
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas:
+        'nav_bar nav_bar nav_bar nav_bar nav_bar'
+        '. main_pic main_pic main_pic . '
+        ' . introd introd introd .'
+        '. role role role .'
+        ' . obj obj obj .'
+        ' . ref ref ref .';
+        grid-gap:1.2em;
+
+}
+
+.Main_pic {
+    grid-area: main_pic;
+    height:100%;
+    width: 100%;
+    align-self:center;
+    resize:100px;
+}
+
+.ind {
+    grid-area: introd;
+    display: block;
+    background-color: white;
+    width:50%;
+    max-height:auto;
+}
+.Obj {
+    grid-area: obj;
+    display: block;
+    background-color: white;
+    width: 50%;
+    max-height: auto;
+}
+
+.role {
+    grid-area: role;
+    display: block;
+    background-color: white;
+    width: 50%;
+    max-height: auto;
+}
+
+.reflection {
+    grid-area: ref;
+    display: block;
+    background-color: white;
+    width: 50%;
+    max-height: auto;
+}
